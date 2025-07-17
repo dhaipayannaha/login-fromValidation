@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-blue-100 to-purple-200 flex items-center justify-center">
+
+  <div class="bg-white p-10 rounded-2xl shadow-xl w-full max-w-md">
+    <h3 class="text-2xl font-semibold text-center mb-6 text-purple-700">Register Form</h3>
+    <form action="" class="space-y-5">
+      <!-- Username -->
+      <div>
+        <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+        <div class="relative mt-1">
+          <input type="text" id="username" placeholder="Username" required autocomplete="off"
+            class="form-control w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+        </div>
+        <div class="error text-sm text-red-500 mt-1" id="usernameError"></div>
+      </div>
+
+      <!-- Phone -->
+      <div>
+        <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+        <input type="text" id="phone" placeholder="Phone Number" required autocomplete="off"
+          class="form-control w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+        <div class="error text-sm text-red-500 mt-1" id="phoneError"></div>
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="text" id="email" placeholder="Email" required autocomplete="off"
+          class="form-control w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+        <div class="error text-sm text-red-500 mt-1" id="emailError"></div>
+      </div>
+
+      <!-- Password -->
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="text" id="password" placeholder="Password" required autocomplete="off"
+          class="form-control w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+        <div class="error text-sm text-red-500 mt-1" id="passwordError"></div>
+      </div>
+
+      <!-- Confirm Password -->
+      <div>
+        <label for="confirmPassword" class="block text-sm font-medium text-gray-700">Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required autocomplete="off"
+          class="form-control w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+        <div class="error text-sm text-red-500 mt-1" id="confirmPasswordError"></div>
+      </div>
+
+      <!-- Submit Button -->
+      <button 
+        class="formSubmit w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+        Register
+      </button>
+    </form>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
